@@ -5,7 +5,8 @@ from .views import (
     CommentViewSet,
     FollowViewSet,
     GroupViewSet,
-    PostViewSet)
+    PostViewSet
+)
 
 
 router_v1 = routers.DefaultRouter()

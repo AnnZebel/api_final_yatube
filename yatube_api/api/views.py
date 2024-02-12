@@ -11,7 +11,8 @@ from .serializers import (
     CommentSerializer,
     FollowSerializer,
     GroupSerializer,
-    PostSerializer)
+    PostSerializer
+)
 from posts.models import Post, Group
 
 
@@ -29,7 +30,6 @@ class PostViewSet(viewsets.ModelViewSet):
 class GroupViewSet(ReadOnlyModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    # permission_classes = [IsAuthenticatedOrReadOnly]
 
 
 class CommentViewSet(viewsets.ModelViewSet):
